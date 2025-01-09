@@ -1,0 +1,13 @@
+:root {
+  --main-font: "Montserrat", sans-serif;
+  /*--second-family: "Raleway", sans-serif;*/
+
+  --white: rgba(255, 255, 255, 1);
+  --black: rgba(0, 0, 0, 1);
+  --red: rgba(230, 32, 43, 1);
+
+  /*--font-weight-regular: 400;*/
+  /*--font-weight-medium: 500;*/
+  /*--font-weight-bold: 700;*/
+
+}
