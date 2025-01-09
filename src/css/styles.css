@@ -1,17 +1,17 @@
 /* Variables styles */
-@import url('common/variables.css');
+@import url('./common/variables.css');
 
 /* Common styles */
-@import url('common/reset.css');
-@import url('common/base.css');
-@import url('common/container.css');
+@import url('./common/reset.css');
+@import url('./common/base.css');
+@import url('./common/container.css');
 
 /* Utils styles */
 @import url('utils/animations.css');
 
 /* Sections style */
-@import url('components/header.css');
-@import url('components/mobile-menu.css');
-@import url('components/search.css');
-@import url('components/hero.css');
-@import url('components/footer.css');
+@import url('./components/header.css');
+@import url('./components/mobile-menu.css');
+@import url('./components/search.css');
+@import url('./components/hero.css');
+@import url('./components/footer.css');
