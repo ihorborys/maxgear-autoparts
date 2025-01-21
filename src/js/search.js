@@ -28,7 +28,7 @@ closeButton.addEventListener('click', event => {
 // Автоматично завантажуємо файл за URL
 // const fileURL = '../public/PRICE AP_GDANSK_MOTOROL_ 13.01.2024_R_utf_8.csv'; // Замінити на шлях до файлу
 const fileURL =
-  'https://raw.githubusercontent.com/ihorborys/vite-maxgear-autoparts/gh-pages/PRICE%20AP_GDANSK_MOTOROL_%2013.01.2024_R_utf_8.csv'; // Замінити на шлях до файлу
+  'https://ihorborys-aws-bucket.s3.eu-north-1.amazonaws.com/Prices/PRICE+AP_GDANSK_MOTOROL_+13.01.2024_R_utf_8.csv'; // Замінити на шлях до файлу
 
 const readPrice = () => {
   fetch(fileURL)
@@ -154,6 +154,6 @@ function displayResults(result) {
     .join('');
 }
 
-// Додавання вибраник елементів в кошик
+// Додавання вибраних елементів в кошик
 
 readPrice();
