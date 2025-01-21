@@ -1,1 +1,81 @@
-/*<!--    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />-->*/
+.container.search {
+  position: relative;
+}
+
+.search.button {
+  color: var(--black);
+  background-color: var(--white);
+  padding: 20px 40px;
+  border-radius: 5px;
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+  /*width: 50%;*/
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тінь для стилю */
+  cursor: pointer;
+
+  position: inherit;
+  transition: background-color 2s ease;
+
+  left: -100%; /* Початкова позиція за межами лівого краю */
+  animation: slideFromLeft 1.5s ease 1.2s forwards; /* Затримка 0.3 секунди */
+}
+
+.search.button:hover {
+  background-color: var(--red);
+}
+
+.searched-item {
+  cursor: pointer;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px 20px;
+  /*margin: 20px;*/
+  background-color: lightgray;
+}
+
+/*.label.search {*/
+/*  display: flex;*/
+/*  !*background-color: var(--red);*!*/
+/*  color: var(--black);*/
+/*  !*justify-content: center;*!*/
+/*  cursor: pointer;*/
+/*}*/
+
+/*#search {*/
+/*  background-color: var(--white);*/
+/*  padding: 20px 40px;*/
+/*  font-size: 36px;*/
+/*  font-weight: 500;*/
+/*  width: 100%;*/
+/*  text-align: center;*/
+/*  transition: background-color 2s ease;*/
+/*}*/
+
+/*#search:hover {*/
+/*  background-color: var(--red);*/
+/*}*/
+
+/*#results {*/
+/*  color: var(--white);*/
+/*}*/
+
+/*!*.search-pic {*!*/
+/*!*  border-radius: 50%;*!*/
+/*!*}*!*/
+
+/*.search-logo {*/
+/*  -webkit-animation: shake-top 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;*/
+/*  animation: shake-top 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both infinite;*/
+/*}*/
+
+@media only screen and (min-width: 768px) {
+  .searched-item {
+    padding: 20px 40px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+}

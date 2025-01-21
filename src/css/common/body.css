@@ -1,0 +1,13 @@
+body {
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*min-width: 100vw;*/
+  /*min-height: 100vh;*/
+  /*margin: 0;*/
+}
+
+h1 {
+  /*font-family: var(--second-family), serif;*/
+  font-size: 72px;
+  font-weight: 700;
+}
