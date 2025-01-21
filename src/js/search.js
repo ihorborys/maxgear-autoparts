@@ -32,17 +32,17 @@ const fileURL =
 
 const readPrice = () => {
   // Показуємо лоадер для прайсу до його завантаження
-  document.getElementById('price-loader').style.display = 'block'; // Показуємо лоадер прайсу
+  document.getElementById('loader').style.display = 'block'; // Показуємо лоадер прайсу
 
   fetch(fileURL)
     .then(response => response.text())
     .then(data => {
       parseCSV(data); // Парсимо CSV
-      document.getElementById('price-loader').style.display = 'none'; // Сховуємо лоадер після завантаження
+      document.getElementById('loader').style.display = 'none'; // Сховуємо лоадер після завантаження
     })
     .catch(error => {
       alert('Error loading file: ' + error);
-      document.getElementById('price-loader').style.display = 'none'; // Сховуємо лоадер при помилці
+      document.getElementById('loader').style.display = 'none'; // Сховуємо лоадер при помилці
     });
 };
 
