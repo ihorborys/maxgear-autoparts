@@ -2,13 +2,13 @@ const DELIMITER = ';';
 // const NEW_LINE = '\r\n';
 const searchInput = document.querySelector('#search');
 
-// Імітація затримки завантаження
-window.onload = function () {
-  setTimeout(function () {
-    document.getElementById('loader').style.display = 'none';
-    document.getElementById('content').style.display = 'block';
-  }, 2000); // 2 секунди затримки
-};
+// // Імітація затримки завантаження
+// window.onload = function () {
+//   setTimeout(function () {
+//     document.getElementById('loader').style.display = 'none';
+//     document.getElementById('content').style.display = 'block';
+//   }, 2000); // 2 секунди затримки
+// };
 
 // Відкриття модального вікна пошуку
 const catalogButton = document.querySelector('.search.button');
