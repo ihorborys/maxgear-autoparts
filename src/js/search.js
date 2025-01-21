@@ -31,19 +31,10 @@ const fileURL =
   'https://raw.githubusercontent.com/ihorborys/vite-maxgear-autoparts/gh-pages/PRICE%20AP_GDANSK_MOTOROL_%2013.01.2024_R_utf_8.csv'; // Замінити на шлях до файлу
 
 const readPrice = () => {
-  // Показуємо лоадер для прайсу до його завантаження
-  document.getElementById('loader').style.display = 'block'; // Показуємо лоадер прайсу
-
   fetch(fileURL)
     .then(response => response.text())
-    .then(data => {
-      parseCSV(data); // Парсимо CSV
-      document.getElementById('loader').style.display = 'none'; // Сховуємо лоадер після завантаження
-    })
-    .catch(error => {
-      alert('Error loading file: ' + error);
-      document.getElementById('loader').style.display = 'none'; // Сховуємо лоадер при помилці
-    });
+    .then(data => parseCSV(data))
+    .catch(error => alert('Error loading file: ' + error));
 };
 
 // Парсинг файлу
