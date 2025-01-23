@@ -22,7 +22,7 @@
   padding: 20px 20px 20px 0;
   position: inherit;
   left: -100%; /* Початкова позиція за межами лівого краю */
-  animation: slideFromLeft 1.5s ease 0.3s forwards; /* Затримка 0.3 секунди */
+  animation: slideFromLeft 1.5s ease 5s forwards; /* Затримка 0.3 секунди */
 }
 
 .header-menu {
