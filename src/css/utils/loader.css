@@ -1,0 +1,48 @@
+/*Animation download (loader)*/
+.loader-modal {
+  position: fixed;
+  /*padding: 0 20px;*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Затемнення фону */
+  display: block; /* Спочатку модальне вікно приховане */
+  justify-content: center; /* Центрування по горизонталі */
+  align-items: center; /* Центрування по вертикалі */
+  z-index: 9999; /* Виводимо поверх всього іншого контенту */
+}
+
+.loader {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  color: var(--white);
+  background: radial-gradient(farthest-side, currentColor calc(100% - 6px), #0000 calc(100% - 5px) 0);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 13px) #000 calc(100% - 12px));
+  border-radius: 50%;
+  animation: l19 5s infinite linear;
+}
+
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  background: linear-gradient(currentColor 0 0) center,
+  linear-gradient(currentColor 0 0) center;
+  background-size: 100% 10px, 10px 100%;
+  background-repeat: no-repeat;
+}
+
+.loader::after {
+  transform: rotate(45deg);
+}
+
+@keyframes l19 {
+  100% {
+    transform: rotate(1turn)
+  }
+}

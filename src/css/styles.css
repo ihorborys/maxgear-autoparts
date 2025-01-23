@@ -9,6 +9,7 @@
 
 /* Utils styles */
 @import url('./utils/animations.css');
+@import url('./utils/loader.css');
 
 /* Sections style */
 @import url('./components/header.css');
