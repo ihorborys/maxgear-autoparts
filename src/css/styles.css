@@ -5,6 +5,7 @@
 @import url('./common/reset.css');
 @import url('common/root.css');
 @import url('common/body.css');
+@import url('common/wrapper.css');
 @import url('./common/container.css');
 
 /* Utils styles */

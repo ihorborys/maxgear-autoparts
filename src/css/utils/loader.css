@@ -6,8 +6,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3); /* Затемнення фону */
-  display: block; /* Спочатку модальне вікно приховане */
+  background-color: rgba(0, 0, 0, 1); /* Затемнення фону */
+  display: flex; /* Спочатку модальне вікно приховане */
   justify-content: center; /* Центрування по горизонталі */
   align-items: center; /* Центрування по вертикалі */
   z-index: 9999; /* Виводимо поверх всього іншого контенту */
@@ -15,8 +15,6 @@
 
 .loader {
   position: absolute;
-  bottom: 40px;
-  right: 40px;
   width: 50px;
   aspect-ratio: 1;
   display: grid;

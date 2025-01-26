@@ -7,22 +7,23 @@
   background-color: var(--white);
   padding: 20px 40px;
   border-radius: 5px;
-  font-size: 36px;
+  font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
   /*width: 50%;*/
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тінь для стилю */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тінь для стилю */
   cursor: pointer;
 
   position: inherit;
   transition: background-color 2s ease;
 
-  left: -100%; /* Початкова позиція за межами лівого краю */
-  animation: slideFromLeft 1.5s ease 6s forwards; /* Затримка 1.2 секунди */
+  left: -200%; /* Початкова позиція за межами лівого краю */
+  animation: slideFromLeft 1.5s ease 3s forwards; /* Затримка 1.2 секунди */
 }
 
-.search.button:hover {
+.search.button:hover,
+.search.button:focus {
   background-color: var(--red);
 }
 
@@ -70,12 +71,27 @@
 /*  animation: shake-top 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both infinite;*/
 /*}*/
 
+
+/*!* Styles for Tablet devices *!*/
 @media only screen and (min-width: 768px) {
   .searched-item {
     padding: 20px 40px;
   }
+
+  .search.button {
+    font-size: 26px;
+  }
 }
 
-@media only screen and (min-width: 1024px) {
+
+/*!* Styles for Desktop devices *!*/
+@media only screen and (min-width: 1280px) {
+  .search.button {
+    font-size: 36px;
+  }
+}
+
+/*/* Styles for Widescreen devices *!*/
+@media only screen and (min-width: 1440px) {
 
 }
