@@ -3,9 +3,8 @@
 
 .address-list {
   display: flex;
-  /*flex-direction: column;*/
-  /*align-items: start;*/
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
 }
 
 .address-item {
@@ -66,15 +65,13 @@
 /*  }*/
 /*}*/
 
-/*!*!* Styles for Tablet devices *!*!*/
-/*@media only screen and (max-width: 580px) {*/
-/*  .address-list {*/
-/*    !*display: flex;*!*/
-/*    flex-direction: column;*/
-/*    align-items: start;*/
-/*    !*justify-content: space-between;*!*/
-/*  }*/
-/*}*/
+/*/* Styles for Mobile devices *!*/
+@media only screen and (min-width: 480px) {
+  .address-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 
 /*!* Styles for Tablet devices *!*/
