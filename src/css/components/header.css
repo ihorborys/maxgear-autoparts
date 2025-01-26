@@ -3,8 +3,9 @@
 
 .address-list {
   display: flex;
-  flex-direction: column;
-  align-items: start;
+  /*flex-direction: column;*/
+  /*align-items: start;*/
+  justify-content: space-between;
 }
 
 .address-item {
@@ -62,6 +63,16 @@
 
 /*  .address-item {*/
 /*    padding: 10px 0;*/
+/*  }*/
+/*}*/
+
+/*!*!* Styles for Tablet devices *!*!*/
+/*@media only screen and (max-width: 580px) {*/
+/*  .address-list {*/
+/*    !*display: flex;*!*/
+/*    flex-direction: column;*/
+/*    align-items: start;*/
+/*    !*justify-content: space-between;*!*/
 /*  }*/
 /*}*/
 
