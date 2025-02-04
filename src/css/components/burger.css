@@ -1,7 +1,16 @@
 .mobile-menu-btn {
-
+  line-height: 0;
+  /*border-radius: 50%;*/
+  /*padding: 10px;*/
+  /*transition: border 0.1s ease;*/
+  cursor: pointer;
 }
 
 .mobile-menu-btn-icon {
   fill: var(--red);
+}
+
+.mobile-menu-btn-icon:hover,
+.mobile-menu-btn-icon:focus {
+  /*fill: var(--white);*/
 }

@@ -1,0 +1,30 @@
+/*.modal-overlay.burger {*/
+/*  !*position: fixed;*!*/
+/*  transform: translateX(100%);*/
+/*  animation: slideFromRight ease-out 0.3s forwards;*/
+/*}*/
+
+.modal-overlay.burger {
+  position: fixed;
+  transform: translateX(100%);
+  animation: slideFromRight ease-out 0.3s forwards;
+}
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  font-weight: 700;
+}
+
+.mobile-menu-list-item {
+  padding: 5px;
+}
+
+.mobile-menu-list-item.active {
+  background-color: var(--white);
+  color: var(--black);
+}
+

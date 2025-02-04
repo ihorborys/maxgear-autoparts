@@ -12,19 +12,16 @@
   z-index: 100; /* Виводимо поверх всього іншого контенту */
 }
 
-.modal {
+.modal-container {
   background-color: var(--white);
   padding: 10px 20px;
   border-radius: 5px;
   min-width: 100%; /* Ширина модального вікна */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тінь для стилю */
-  position: relative;
 
   max-height: 80vh;
   overflow-y: auto;
-}
 
-.modal.container {
   border-bottom: none;
 }
 
@@ -32,9 +29,23 @@
   position: fixed;
   top: 20px;
   right: 20px;
-  font-size: 20px;
-  color: var(--red);
   cursor: pointer;
+  line-height: 0;
+  /*border: 3px solid var(--white);*/
+  border-radius: 50%;
+  padding: 10px;
+  transition: border 0.1s ease;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  border: 2px solid var(--red);
+  /*background-color: var(--white);*/
+
+}
+
+.modal-close-btn-icon {
+  fill: var(--red);
 }
 
 /* Відкриття модального вікна за допомогою класу .active */
@@ -42,79 +53,36 @@
   display: flex; /* Відображення модального вікна, коли воно активне */
 }
 
-/*.container.search.modal {*/
-/*  border-bottom: none;*/
-/*}*/
-
-/*.modal-title {*/
-/*  color: var(--black);*/
-/*}*/
-
-.modal-search {
-  display: block;
-  margin: 20px 0;
-  color: var(--black);
-}
-
-.label.search {
-  display: flex;
-  /*background-color: var(--red);*/
-  color: var(--black);
-  /*justify-content: center;*/
-  cursor: pointer;
-}
-
-#search {
-  background-color: var(--white);
-  padding: 20px 40px;
-  /*margin: 20px;*/
-  font-size: 20px;
-  font-weight: 500;
-  width: 100%;
-  text-align: center;
-  transition: background-color 2s ease;
-
-  border-radius: 5px;
-}
-
-#search:hover {
-  background-color: var(--red);
-}
-
-#results {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  color: var(--black);
-}
 
 @media only screen and (min-width: 768px) {
   .modal-overlay {
-    padding: 20px 40px;
+    padding: 40px;
   }
 
   .modal {
     padding: 20px 40px;
   }
-
+  
   .modal-close-btn {
     top: 40px;
     right: 40px;
+    padding: 20px;
   }
 
-  #search {
-    font-size: 26px;
-  }
 }
 
 @media only screen and (min-width: 900px) {
-  #search {
-    font-size: 36px;
-  }
+
 }
 
 @media only screen and (min-width: 1024px) {
-  /*.container {*/
-  /*  !*max-width: 1024px;*!*/
-  /*}*/
+  .modal-overlay {
+    padding: 40px 60px;
+  }
+
+  .modal-close-btn {
+    top: 40px;
+    right: 60px;
+  }
+
 }

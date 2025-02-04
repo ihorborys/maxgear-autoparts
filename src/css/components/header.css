@@ -1,3 +1,7 @@
+.container.header {
+  /*padding: 10px 30px;*/
+}
+
 .header-address {
 }
 
@@ -8,19 +12,25 @@
 }
 
 .address-item {
-  padding: 20px 0;
+  padding: 10px 0;
+}
+
+.address-link {
+  transition: color 0.3s ease-in;
 }
 
 .header-nav {
   display: flex;
   justify-content: space-between;
+  margin-right: auto;
   position: relative;
+  align-items: center;
 }
 
 .logo {
   padding: 20px 20px 20px 0;
   position: inherit;
-  left: -200%; /* Початкова позиція за межами лівого краю */
+  transform: translateX(-100%); /* Початкова позиція за межами лівого краю */
   animation: slideFromLeft 1.5s ease 2s forwards; /* Затримка 0.3 секунди */
 }
 
@@ -28,6 +38,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
 }
 
 .header-item {
@@ -39,11 +50,12 @@
 .address-link:focus,
 .header-link:focus {
   color: var(--red);
-  transition: color 0.3s ease-in;
 }
+
 
 .header-link {
   padding: 21px 0;
+  transition: color 0.3s ease-in;
 }
 
 /*@media only screen and (max-width: 319px) {*/

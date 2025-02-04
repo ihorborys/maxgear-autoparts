@@ -14,8 +14,9 @@
 
 /* Sections style */
 @import url('./components/header.css');
-@import url('./components/burger.css');
-@import url('./components/search.css');
+@import url('components/burger.css');
+@import url('components/modal-burger.css');
 @import url('./components/modal.css');
+@import url('components/modal-search.css');
 @import url('./components/hero.css');
 @import url('./components/footer.css');

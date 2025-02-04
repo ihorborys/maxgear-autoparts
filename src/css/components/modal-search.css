@@ -1,4 +1,4 @@
-.container.search {
+.modal-container.search {
   position: relative;
 }
 
@@ -6,7 +6,7 @@
   color: var(--black);
   background-color: var(--white);
   padding: 20px 40px;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
@@ -19,13 +19,52 @@
   position: inherit;
   transition: background-color 2s ease;
 
-  left: -200%; /* Початкова позиція за межами лівого краю */
+  transform: translateX(-150%); /* Початкова позиція за межами лівого краю */
   animation: slideFromLeft 1.5s ease 3s forwards; /* Затримка 1.2 секунди */
 }
 
 .search.button:hover,
 .search.button:focus {
   background-color: var(--red);
+}
+
+.modal-search {
+  display: block;
+  margin: 20px 0;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.label.search {
+  display: flex;
+  /*background-color: var(--red);*/
+  color: var(--black);
+  /*justify-content: center;*/
+  cursor: pointer;
+}
+
+#search {
+  background-color: var(--white);
+  padding: 20px 40px;
+  /*margin: 20px;*/
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  transition: background-color 2s ease;
+
+  border-radius: 5px;
+}
+
+#search:hover {
+  background-color: var(--red);
+}
+
+#results {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  color: var(--black);
 }
 
 .searched-item {
@@ -75,6 +114,10 @@
 
 /*!* Styles for Tablet devices *!*/
 @media only screen and (min-width: 768px) {
+  #search {
+    font-size: 26px;
+  }
+
   .searched-item {
     padding: 20px 40px;
   }
@@ -82,14 +125,29 @@
   .search.button {
     font-size: 26px;
   }
+
+  .search.button {
+    padding: 30px 50px;
+  }
+
 }
 
+@media only screen and (min-width: 900px) {
+  #search {
+    font-size: 36px;
+  }
+}
 
 /*!* Styles for Desktop devices *!*/
 @media only screen and (min-width: 1280px) {
   .search.button {
     font-size: 36px;
   }
+
+  .search.button {
+    padding: 30px 60px;
+  }
+
 }
 
 /*/* Styles for Widescreen devices *!*/

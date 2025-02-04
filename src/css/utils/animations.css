@@ -1,21 +1,47 @@
-/* Оголошення ключових кадрів */
+/*!* Оголошення ключових кадрів *!*/
+/*@keyframes slideFromLeft {*/
+/*  0% {*/
+/*    left: -100%; !* Початкова позиція *!*/
+/*  }*/
+/*  100% {*/
+/*    left: 0; !* Кінцева позиція *!*/
+/*  }*/
+/*}*/
+
 @keyframes slideFromLeft {
-  0% {
-    left: -100%; /* Початкова позиція */
+  from {
+    transform: translateX(-100%);
   }
-  100% {
-    left: 0; /* Кінцева позиція */
+  to {
+    transform: translateX(0);
   }
 }
 
+/*@keyframes slideFromRight {*/
+/*  0% {*/
+/*    right: -100%; !* Початкова позиція *!*/
+/*  }*/
+/*  100% {*/
+/*    right: 0; !* Кінцева позиція *!*/
+/*  }*/
+
 @keyframes slideFromRight {
-  0% {
-    right: -100%; /* Початкова позиція */
+  from {
+    transform: translateX(100%);
   }
-  100% {
-    right: 0; /* Кінцева позиція */
+  to {
+    transform: translateX(0);
   }
 }
+
+/*@keyframes slideFromTop {*/
+/*  from {*/
+/*    transform: translateY(0%);*/
+/*  }*/
+/*  to {*/
+/*    transform: translateY(20%);*/
+/*  }*/
+/*}*/
 
 
 /* ----------------------------------------------
