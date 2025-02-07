@@ -41,9 +41,16 @@
 <meta content="534" property="og:image:height" />
 <meta content="website" property="og:type" />
 
+<!--<link-->
+<!--  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"-->
+<!--  rel="stylesheet"-->
+<!--/>-->
+
+<!--<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>-->
   <script type="module" crossorigin src="/vite-maxgear-autoparts/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/vite-maxgear-autoparts/assets/index-BVfj7upU.css">
-  <link rel="stylesheet" crossorigin href="/vite-maxgear-autoparts/assets/vendor-CMVIPpTy.css">
+  <link rel="modulepreload" crossorigin href="/vite-maxgear-autoparts/assets/vendor-CurnzoiA.js">
+  <link rel="stylesheet" crossorigin href="/vite-maxgear-autoparts/assets/vendor-CtS3_FDW.css">
+  <link rel="stylesheet" crossorigin href="/vite-maxgear-autoparts/assets/index-C2r9FK3n.css">
 </head>
 <body>
 <!--<header class="header">-->
@@ -136,7 +143,7 @@
     </button>
     <ul class="mobile-menu-list">
       <li class="mobile-menu-list-item active">
-        <a class="mobile-menu-list-item-link" href="#">Каталог автозапчастин</a>
+        <a class="mobile-menu-list-item-link" href="#">Пошук автозапчастин</a>
       </li>
       <li class="mobile-menu-list-item">
         <a class="mobile-menu-list-item-link" href="#">Постачальники</a>
@@ -151,7 +158,6 @@
   </div>
 </div>
 
-
 <main>
   <!-- Loads the specified .html file -->
   <div class="loader-modal" id="js-loader">
@@ -164,7 +170,7 @@
     <button
       class="search button"
       type="button">
-      каталог автозапчастин
+      пошук автозапчастин
     </button>
   </div>
 </div>
@@ -196,43 +202,88 @@
   </div>
 </div>
 
-  <!--<article class="badges">-->
-<!--  <div class="container">-->
-<!--    <ul class="badges-list">-->
-<!--      <li class="badges-item">-->
-<!--        <a-->
-<!--          class="badges-link"-->
-<!--          href="https://www.npmjs.com/package/vite-plugin-html-inject"-->
-<!--          target="_blank"-->
-<!--          rel="noopener noreferrer"-->
-<!--        >-->
-<!--          HTML Inject-->
-<!--        </a>-->
-<!--      </li>-->
-<!--      <li class="badges-item">-->
-<!--        <a-->
-<!--          class="badges-link"-->
-<!--          href="https://www.npmjs.com/package/vite-plugin-full-reload"-->
-<!--          target="_blank"-->
-<!--          rel="noopener noreferrer"-->
-<!--        >-->
-<!--          Full Reload-->
-<!--        </a>-->
-<!--      </li>-->
-<!--      <li class="badges-item">-->
-<!--        <a-->
-<!--          class="badges-link"-->
-<!--          href="https://www.npmjs.com/package/postcss-sort-media-queries"-->
-<!--          target="_blank"-->
-<!--          rel="noopener noreferrer"-->
-<!--        >-->
-<!--          Sort Media Queries-->
-<!--        </a>-->
-<!--      </li>-->
-<!--    </ul>-->
-<!--  </div>-->
-<!--</article>-->
+  <div class="wrapper slider">
+  <div class="container slider">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a
+            class="swiper-slide-link"
+            href="https://autopartner.com/"
+            target="_blank">
+            Autopartner Rzeszow
+            <img
+              alt="Autopartner Rzeszow site screenshot"
+              class="swiper-slide-img"
+              src="https://api.screenshotmachine.com?key=3c4f15&url=https%3A%2F%2Fautopartner.com%2F&dimension=1024x768&cacheLimit=1">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a
+            class="swiper-slide-link"
+            href="https://www.autopartner.pl/"
+            target="_blank">
+            Autopartner Gdansk
+            <img
+              alt="Autopartner Gdansk site screenshot"
+              class="swiper-slide-img"
+              src="https://api.screenshotmachine.com/?key=3c4f15&url=https%3A%2F%2Fwww.autopartner.pl%2F&dimension=1024x768&cacheLimit=1">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a
+            class="swiper-slide-link"
+            href="https://www.motorol.pl/"
+            target="_blank">
+            Motorol
+            <img
+              alt="Motorol site screenshot"
+              class="swiper-slide-img"
+              src="https://api.screenshotmachine.com?key=3c4f15&url=https%3A%2F%2Fwww.motorol.pl%2F&dimension=1024x768&cacheLimit=1">
+          </a>
+        </div>
+      </div>
 
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!--  &lt;!&ndash; If we need navigation buttons &ndash;&gt;-->
+      <!--  <div class="swiper-button-prev"></div>-->
+      <!--  <div class="swiper-button-next"></div>-->
+
+      <!--  &lt;!&ndash; If we need scrollbar &ndash;&gt;-->
+      <!--  <div class="swiper-scrollbar"></div>-->
+    </div>
+  </div>
+</div>
+
+
+<!--https://api.screenshotmachine.com/?key=3c4f15&url=https%3A%2F%2Fwww.autopartner.pl%2F&dimension=1024x768-->
+
+<!--https://api.screenshotmachine.com?key=3c4f15&url=https%3A%2F%2Fautopartner.com%2F&dimension=1024x768-->
+
+<!--https://api.screenshotmachine.com?key=3c4f15&url=https%3A%2F%2Fwww.motorol.pl%2F&dimension=1024x768-->
+
+<!--&lt;!&ndash; Slider main container &ndash;&gt;-->
+<!--<div class="swiper">-->
+<!--  &lt;!&ndash; Additional required wrapper &ndash;&gt;-->
+<!--  <div class="swiper-wrapper">-->
+<!--    &lt;!&ndash; Slides &ndash;&gt;-->
+<!--    <div class="swiper-slide">Slide 1</div>-->
+<!--    <div class="swiper-slide">Slide 2</div>-->
+<!--    <div class="swiper-slide">Slide 3</div>-->
+<!--    ...-->
+<!--  </div>-->
+<!--  &lt;!&ndash; If we need pagination &ndash;&gt;-->
+<!--  <div class="swiper-pagination"></div>-->
+
+<!--  &lt;!&ndash; If we need navigation buttons &ndash;&gt;-->
+<!--  <div class="swiper-button-prev"></div>-->
+<!--  <div class="swiper-button-next"></div>-->
+
+<!--  &lt;!&ndash; If we need scrollbar &ndash;&gt;-->
+<!--  <div class="swiper-scrollbar"></div>-->
+<!--</div>-->
 </main>
 
 <!--<footer class="footer">-->
