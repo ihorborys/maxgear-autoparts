@@ -1,4 +1,4 @@
-.wrapper.swiper {
+.wrapper.slider {
   border-bottom: none;
 }
 
@@ -32,8 +32,8 @@
 /* Зміна кольору неактивних точок */
 .swiper .swiper-pagination-bullet {
   background-color: var(--red);
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   opacity: 0.5;
 }
 
