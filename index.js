@@ -3,5 +3,5 @@ import{S as m}from"./assets/vendor-CurnzoiA.js";(function(){const o=document.cre
       <div class="searched-item"">
         ${typeof e=="object"&&e!==null?Object.entries(e).map(([s,c])=>`<p><strong>${L[s]||s}:</strong> &nbsp ${c}</p>`).join(""):`<p>${e}</p>`}
       </div>
-    `).join("")}const S=document.querySelector("#search"),O=t=>{if(t.target.value){const o=i(t.target.value);console.log(o);const r=a.filter(e=>e.code&&i(e.code)===o||e.unicode&&i(e.unicode)===o||e.brand&&i(e.brand)===o);console.log(r),P(r)}},A=E(O,900);S.addEventListener("input",A);new m(".swiper",{direction:"horizontal",loop:!0,slidesPerView:1,spaceBetween:20,breakpoints:{1280:{slidesPerView:2}},autoplay:{delay:4e3,disableOnInteraction:!1},pagination:{el:".swiper-pagination",clickable:!0,dynamicBullets:!0}});
+    `).join("")}const S=document.querySelector("#search"),O=t=>{if(t.target.value){const o=i(t.target.value);console.log(o);const r=a.filter(e=>e.code&&i(e.code)===o||e.unicode&&i(e.unicode)===o||e.brand&&i(e.brand)===o);console.log(r),P(r)}},A=E(O,900);S.addEventListener("input",A);new m(".swiper",{direction:"horizontal",loop:!0,mousewheel:!0,slidesPerView:1,spaceBetween:20,breakpoints:{768:{slidesPerView:2},1440:{slidesPerView:3}},autoplay:{delay:4e3,disableOnInteraction:!1},pagination:{el:".swiper-pagination",clickable:!0,dynamicBullets:!0}});
 //# sourceMappingURL=index.js.map
