@@ -63,7 +63,10 @@ header {
 
 
 .header-link {
-  padding: 21px 0;
+  /*padding: 21px 0;*/
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
   transition: color 0.3s ease-in;
 }
 
