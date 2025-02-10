@@ -24,4 +24,9 @@ window.onload = function () {
       // Ховаємо індикатор завантаження
       loader.style.display = 'none';
     });
+
+  if ((loader.style.display = 'none')) {
+    document.querySelector('.logo').style.animationDelay = '0.5s';
+    document.querySelector('.search.button').style.animationDelay = '1s';
+  }
 };

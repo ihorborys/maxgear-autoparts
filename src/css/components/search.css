@@ -20,7 +20,7 @@
   transition: background-color 2s ease;
 
   transform: translateX(-150%); /* Початкова позиція за межами лівого краю */
-  animation: slideFromLeft 1.5s ease 3s forwards; /* Затримка 1.2 секунди */
+  animation: slideFromLeft 1.5s ease 1.2s forwards; /* Затримка 1.2 секунди */
 }
 
 .search.button:hover,
