@@ -9,5 +9,5 @@
 .copyright-section {
   display: flex;
   justify-content: center;
-  background-color: var(--red);
+  /*background-color: var(--red);*/
 }
