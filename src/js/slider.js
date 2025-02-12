@@ -12,11 +12,11 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 20,
 
   breakpoints: {
-    768: {
+    480: {
       slidesPerView: 2, // Від 1280px і більше буде 2 слайди
     },
 
-    1440: {
+    1024: {
       slidesPerView: 3, // Від 1280px і більше буде 3 слайди
     },
   },

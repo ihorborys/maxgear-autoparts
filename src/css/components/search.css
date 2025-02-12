@@ -3,6 +3,16 @@
 }
 
 .search.button {
+  display: grid;
+  grid-template-columns: 100fr 1fr;
+  gap: 10px;
+  align-items: center;
+
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+
+
   color: var(--black);
   background-color: var(--white);
   padding: 20px 40px;
@@ -13,18 +23,49 @@
   text-transform: uppercase;
   min-width: 100%;
   /*width: 50%;*/
-  text-align: center;
+  /*text-align: center;*/
   box-shadow: inset 8px 8px 10px rgba(0, 0, 0, 0.9); /* Тінь для стилю */
   cursor: pointer;
+  opacity: 0.7;
 
   position: inherit;
-  transition: background-color 2s ease;
+  /*transition: background-color 2s ease;*/
+  transition: opacity 0.3s ease-in;
 
   transform: translateX(-150%); /* Початкова позиція за межами лівого краю */
   animation: slideFromLeft 1.5s ease 1.2s forwards; /* Затримка 1.2 секунди */
+  animation-fill-mode: forwards; /* Залишає елемент в кінцевому стані */
 }
 
 .search.button:hover,
 .search.button:focus {
-  /*background-color: var(--red);*/
+  opacity: 1;
+}
+
+.search.button:hover .search-item-icon,
+.search.button:focus .search-item-icon {
+  fill: var(--red);
+}
+
+.search-title {
+  justify-self: center;
+}
+
+.search-item-icon {
+  fill: var(--black);
+  transition: fill 0.3s ease-in;
+  justify-self: center;
+}
+
+/*.search-item-icon:hover,*/
+/*.search-item-icon:focus {*/
+/*  fill: var(--red);*/
+/*}*/
+
+/*!* Styles for Tablet devices *!*/
+@media only screen and (min-width: 768px) {
+  .search-item-icon {
+    height: 26px;
+    width: 26px;
+  }
 }
