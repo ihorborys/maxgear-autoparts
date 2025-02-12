@@ -10,7 +10,8 @@ header {
 
 }
 
-.header-address {
+.address {
+
 }
 
 .address-list {
@@ -42,7 +43,7 @@ header {
   transition: color 0.3s ease-in;
 }
 
-.header-nav {
+.nav {
   display: flex;
   justify-content: space-between;
   margin-right: auto;
@@ -125,7 +126,7 @@ header {
 
 /*!* Styles for Desktop devices *!*/
 @media only screen and (min-width: 1024px) {
-  .header-nav-img {
+  .nav-img {
     width: 264px;
   }
 }
