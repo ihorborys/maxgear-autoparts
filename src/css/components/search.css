@@ -8,11 +8,6 @@
   gap: 10px;
   align-items: center;
 
-  /*display: flex;*/
-  /*justify-content: center;*/
-  /*align-items: center;*/
-
-
   color: var(--black);
   background-color: var(--white);
   padding: 20px 40px;
@@ -47,8 +42,17 @@
 }
 
 .search-title {
+  font-size: 26px;
   justify-self: center;
   transition: color 0.3s ease-in;
+}
+
+.search-title.full {
+  display: none;
+}
+
+.search-title.short {
+  display: inline-block;
 }
 
 .search.button:hover .search-title,
@@ -62,15 +66,13 @@
   justify-self: center;
 }
 
-/*.search-item-icon:hover,*/
-/*.search-item-icon:focus {*/
-/*  fill: var(--red);*/
-/*}*/
-
 /*!* Styles for Tablet devices *!*/
 @media only screen and (min-width: 768px) {
-  .search-item-icon {
-    height: 26px;
-    width: 26px;
+  .search-title.full {
+    display: inline-block;
+  }
+
+  .search-title.short {
+    display: none;
   }
 }
