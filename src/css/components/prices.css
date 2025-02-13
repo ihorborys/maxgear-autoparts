@@ -48,6 +48,7 @@
 .prices-item-title {
   font-size: 12px;
   transition: color 0.3s ease-in;
+  margin-bottom: 5px;
 }
 
 .prices-item-img {
