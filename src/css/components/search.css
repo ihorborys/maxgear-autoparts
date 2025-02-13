@@ -26,7 +26,6 @@
   /*text-align: center;*/
   box-shadow: inset 8px 8px 10px rgba(0, 0, 0, 0.9); /* Тінь для стилю */
   cursor: pointer;
-  opacity: 0.7;
 
   position: inherit;
   /*transition: background-color 2s ease;*/
@@ -39,7 +38,7 @@
 
 .search.button:hover,
 .search.button:focus {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .search.button:hover .search-item-icon,
@@ -49,6 +48,12 @@
 
 .search-title {
   justify-self: center;
+  transition: color 0.3s ease-in;
+}
+
+.search.button:hover .search-title,
+.search.button:focus .search-title {
+  color: var(--red);
 }
 
 .search-item-icon {
