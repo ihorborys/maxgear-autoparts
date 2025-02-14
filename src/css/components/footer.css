@@ -11,3 +11,12 @@
   justify-content: center;
   /*background-color: var(--red);*/
 }
+
+.copyright-link {
+  cursor: pointer;
+  transition: color 0.3s ease-in;
+}
+
+.copyright-link:hover {
+  color: var(--red);
+}

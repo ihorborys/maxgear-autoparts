@@ -6,6 +6,7 @@
   display: grid;
   grid-template-columns: 100fr 1fr;
   gap: 10px;
+  /*justify-content: center;*/
   align-items: center;
 
   color: var(--black);
@@ -63,7 +64,10 @@
 .search-item-icon {
   fill: var(--black);
   transition: fill 0.3s ease-in;
-  justify-self: center;
+  /*justify-self: center;*/
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
 }
 
 /*!* Styles for Tablet devices *!*/
