@@ -17,6 +17,15 @@
   }
 }
 
+@keyframes slideToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 /*@keyframes slideFromRight {*/
 /*  0% {*/
 /*    right: -100%; !* Початкова позиція *!*/
@@ -34,14 +43,27 @@
   }
 }
 
-/*@keyframes slideFromTop {*/
-/*  from {*/
-/*    transform: translateY(0%);*/
-/*  }*/
-/*  to {*/
-/*    transform: translateY(20%);*/
-/*  }*/
-/*}*/
+@keyframes slideFromTop {
+  from {
+    transform: translateY(-100%);
+    /*opacity: 0;*/
+    /*visibility: hidden;*/
+  }
+  to {
+    transform: translateY(0%);
+    /*opacity: 1;*/
+    /*visibility: visible;*/
+  }
+}
+
+@keyframes slideToTop {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
 
 
 /* ----------------------------------------------
