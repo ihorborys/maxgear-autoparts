@@ -25,19 +25,17 @@
   /*animation: slideToLeft 1.5s ease 0.3s forwards; !* Затримка 0.3 секунди *!*/
 }
 
+
 .burger-section.active {
   display: block;
 
-  /*visibility: visible;*/
-  /*opacity: 1;*/
-  /*transition-delay: 10s;*/
+  transform: translateX(-100%); /* Початкова позиція за межами лівого краю */
+  animation: slideFromLeft 1.5s ease 0.3s forwards; /* Затримка 0.3 секунди */
+}
 
-  /*transform: translateX(-100%); !* Початкова позиція за межами лівого краю *!*/
-  /*animation: slideFromLeft 1.5s ease 0.3s forwards; !* Затримка 0.3 секунди *!*/
-
-
-  /*transform: translateX(0%); !* Початкова позиція за межами лівого краю *!*/
-  /*animation: slideToLeft 1.5s ease 0.3s forwards; !* Затримка 0.3 секунди *!*/
+.burger-section.active.hide {
+  transform: translateX(0%); /* Початкова позиція за межами лівого краю */
+  animation: slideToLeft 1.5s ease 0.3s forwards; /* Затримка 0.3 секунди */
 }
 
 .mobile-menu-list {
@@ -47,7 +45,7 @@
   justify-content: center;
   align-items: flex-start;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .mobile-menu-list-item {
