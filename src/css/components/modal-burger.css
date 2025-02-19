@@ -31,6 +31,7 @@
 
 .mobile-menu-list-item.active {
   background-color: var(--white);
+  border-radius: 50px;
   color: var(--black);
 }
 
