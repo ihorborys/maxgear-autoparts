@@ -1,17 +1,5 @@
 import { parseCSV } from './parse.js';
 
-// const fileURLs = ['../public/AUTOPARTNER.csv', '../public/GDANSK.csv', '../public/MOTOROL.csv'];
-
-// Автоматично завантажуємо файл за URL
-// const fileURL =
-//   'https://ihorborys-aws-bucket.s3.eu-north-1.amazonaws.com/Prices/PRICE+AP_GDANSK_MOTOROL_+13.01.2024_R_utf_8.csv';
-
-// const fileURLs = ['../public/AUTOPARTNER.csv', '../public/GDANSK.csv', '../public/MOTOROL.csv'];
-// const fileURLs = [
-//   'https://ihorborys-aws-bucket.s3.eu-north-1.amazonaws.com/Prices/PRICE+AP_GDANSK_MOTOROL_+13.01.2024_R_utf_8.csv',
-// ];
-// console.time('Execution Time');
-
 export const readPrices = fileURLs => {
   if (!Array.isArray(fileURLs) || fileURLs.length === 0) {
     throw new Error('fileURLs should be a non-empty array.');
